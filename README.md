@@ -44,6 +44,12 @@ npm install
 ```
 every package module required to build the project is listed in the package.json file. this is used as a reference to get all dependencies.
 
+To install webpack 
+
+```
+npm install webpack webpack-cli --save-dev ( To run Webpack server)
+```
+
 ## Building 
 
 To build the project run:
