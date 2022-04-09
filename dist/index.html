@@ -11,12 +11,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Leaderboard</title>
 <script defer src="main.js"></script><script defer src="main.js"></script></head>
-<body class="bg-success">
+<body class="bg">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="card p-5">
-					<h1 class="text-center animate__animated animate__rubberBand text-primary">Leaderboard</h1>
+					<h1 class="text-center text-primary">Leaderboard</h1>
 					<div class="row">
 						<div class="col-md-6">
 							<div class="card p-3">
@@ -24,7 +24,7 @@
 									<div class="card-title d-flex">
 										<i class="material-icons mr-1 mt-1 animate__animated animate__rotateIn"></i>
 										<h4>Recent Scores </h4>
-									   <button class="btn btn-success d-flex ml-auto" type="button"><i class="material-icons mr-3"></i> Refresh</button>
+									   <button class="btn btn-success d-flex ml-auto f5" type="button"><i class="material-icons mr-3"></i> Refresh</button>
 									</div>
                                 </div>
                                 <div class="card-content">      
@@ -36,19 +36,8 @@
                                                 <th>Score</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                <tr class="animate__animated animate__bounceInLeft">
-                                                    <td>Gheorghita</td>
-                                                    <td class="text-primary">666</td>
-                                                </tr>
-												<tr class="animate__animated animate__bounceInLeft">
-                                                    <td>Cosmin</td>
-                                                    <td class="text-primary">777</td>
-                                                </tr>    
-												<tr class="animate__animated animate__bounceInLeft">
-                                                    <td>Adrian</td>
-                                                    <td class="text-primary">888</td>
-                                                </tr>                 
+                                            <tbody class="table-content">
+                                                        <!-- Dynamic content -->
                                             </tbody>
                                         </table>
                                     </div>
@@ -57,7 +46,7 @@
 						</div>
 						<div class="col-md-6">
                             <div class="card p-3">
-                                <form>
+                                <form class="data-form">
 									<div class="card-header card-header-icon" data-background-color="rose">
 										<div class="card-title d-flex">
 											<i class="material-icons mt-1 mr-3"></i>
@@ -69,16 +58,16 @@
                                             <label class="control-label">
                                                 Name
                                             </label>
-                                            <input class="form-control" name="text"/>
+                                            <input class="form-control userdetails" name="name" type="text" required />
                                         </div>
                                         <div class="form-group label-floating">
                                             <label class="control-label">
                                                 Score
                                             </label>
-                                            <input class="form-control" name="number" id="registerPassword" type="text" />
+                                            <input class="form-control userdetails" name="number" type="number" required />
                                         </div>
                                         <div class="form-footer text-right">
-                                            <button type="submit" class="btn btn-primary btn-fill d-flex ml-auto"><i class="material-icons mr-3"></i> Register</button>
+                                            <button type="submit" class="btn btn-primary btn-fill d-flex ml-auto"><i class="material-icons mr-3"></i> Submit</button>
                                         </div>
                                     </div>
                                 </form>
